@@ -45,15 +45,15 @@ public class Personagem : MonoBehaviour
         transform.localScale = myScale;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        Mover();
 
         //pulo
-        if (noChao && Input.GetButton("Jump"))
+        if (/*noChao && */Input.GetButton("Jump"))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcaPulo));
-            Debug.Log("PULO");
+            /*GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcaPulo));
+            Debug.Log("PULO");*/
+            transform.Translate(Vector3.up * 0.25f);
         }
     }
 }
