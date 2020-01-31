@@ -15,6 +15,6 @@ public class Roda : MonoBehaviour
     
     void Update()
     {
-        transform.Translate(Vector3.left * 0.10f);  
+        transform.Translate(Vector3.left * 0.25f);  
     }
 }

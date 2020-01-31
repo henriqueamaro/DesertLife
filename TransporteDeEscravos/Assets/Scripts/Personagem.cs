@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Personagem : MonoBehaviour
 {
@@ -54,6 +55,14 @@ public class Personagem : MonoBehaviour
             /*GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcaPulo));
             Debug.Log("PULO");*/
             transform.Translate(Vector3.up * 0.25f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("carro"))
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

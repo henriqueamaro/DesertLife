@@ -63,8 +63,10 @@
     <Compile Include="Assets\Scripts\Chao.cs" />
     <Compile Include="Assets\Scripts\Fase1.cs" />
     <Compile Include="Assets\Scripts\Jogo.cs" />
+    <Compile Include="Assets\Scripts\Jogo1.cs" />
     <Compile Include="Assets\Scripts\Personagem.cs" />
     <Compile Include="Assets\Scripts\Roda.cs" />
+    <Compile Include="Assets\Scripts\spawn.cs" />
     <Compile Include="Assets\Scripts\Vilao.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/felipe.hamaro/Desktop/DesertLife/TransporteDeEscravos/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
